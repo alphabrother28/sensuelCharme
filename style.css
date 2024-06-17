@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif; 
+    box-sizing: border-box;
+}
+
+/* nav_barre1 */
+.header-col{
+    position: fixed;
+    top: 0; 
+    z-index: 10;
+    width: 100%;
+    height: 59px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffffff;
+}
+
+.header img{
+    width: 60px;
+}
+
+.header-col .header-toggle{
+    position: relative;
+    display: flex;
+}
+
+.header-toggle i{
+    color: #666;
+}
+
+.fa-magnifying-glass{
+        position: absolute;
+        top: 50%; 
+        right: 90px; 
+        transform: translateY(-42%);
+        font-size: 20px;
+        color: #71717A; 
+}
+
+.header-col .header-toggle input{
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #f3f4f6;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    width: 270px;
+}
+
+.header-col .header-toggle p{
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* Fin nav_barre1 */
+
+/* nav_barre 2 */
+nav .navbar{
+}
+.onglets ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 30px 5px;
+    margin-top: 50px;
+}
+
+.onglets ul li a{
+    text-decoration: none;
+    margin-right: 25px;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: var(--text-color);
+}
+/* Fin nav_barre 2 */
+
+/* section principale */
+/* section I*/
+.product-video {
+    position: relative;  
+    width: 100%; 
+    height: 250px; 
+    margin: 0 auto;
+}
+
+.product-video video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* Keep aspect ratio while filling the container */
+}
+
+
+
+.swiper-slide{
+    width: 100%;
+    height: 300px;
+    background-image: url(images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: right;
+}
+
+.swiper-slide h2{
+    display: block;
+    font-size: 50px;
+    max-width: 500px;
+    text-transform: uppercase;
+    color: #fff;
+}
+/* Fin section I*/
+
+/* section II */
+.section-deux{
+    width: 100%;
+    height: 250px;
+}
+
+.section-deux .circle-form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-deux .circle-un h1{
+    padding: 35px 35px;
+    background: url(images/visage.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+.section-deux .circle-un p{
+}
+
+.section-deux .circle-deux h1{
+    padding: 35px 35px;
+    background: url(images/corps.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+.section-deux .circle-deux p{
+}
+
+.section-deux .circle-trois h1{
+    position: relative;
+    padding: 35px 35px;
+    background: url(images/maquillage.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+.section-deux .circle-trois p{
+}
+
+.section-deux .circle-quatre h1{
+    display: block;
+    padding: 35px 35px;
+    background: url(images/cheveux.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+.section-deux .circle-quatre p{
+}
+
+.section-deux  h1{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.section-deux  h1:hover{
+    margin-top: 10px;
+}
+/* Fin section II */
+
+/* section III */
+
+/* Fin section III */
+
+/* section III */
+.slider-product .slide-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-title hr{
+    border: none;
+    background-color: #71717A;
+    padding: .5px;
+    font-size: 20px;
+    width: 20%;
+}
+
+.slider-product h1{
+    font-size: 25px;
+    font-family: "Cormorant Garamond", serif;
+    margin: 0 5px;
+    color: #71717A;
+}
+
+.slide-button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.slider-product button{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #df30ef;
+    color: #fff;
+}
+
+.product-boxes {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between; 
+    margin: 0 10px; 
+}
+
+.product-box {
+    width: 300px; 
+    margin: 10px;
+    /* padding: 20px; */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.product-box h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-box .titre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-box button{
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background-color: #df30ef;
+    cursor: pointer;
+}
+
+.slider-product{
+    margin-top: 50px;
+    width: 100%;
+    /* overflow:ku hidden; */
+}
+
+.slider-product .slider{
+    display: flex;
+    animation: slider-product 7s infinite ease-in-out;
+}
+
+.slider-product .product-boxes{
+    flex-shrink: 0;
+    width: 100%;
+}
+
+@keyframes slider-product{
+    0%,
+    45%{
+        transform: translateX(0);
+    }
+    50%,
+    95%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+/* Fin section III */
+
+/* Fin section principale */
+
+
+/* footer */
+.foot-logo{
+    position: relative;
+    background-color: #ffffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .foot-logo h3{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.foot-logo img{
+    /* position: absolute; */
+    top: 10px; left: 79px;
+    width: 160px;
+}
+
+.foot-logo .news{
+    margin-top: 10px;
+}
+
+.foot-logo .news input{
+    padding: 15px 40px;
+    width: 75%;
+    outline: none;
+    border: 1px solid #b2b2b2;
+}
+
+.foot-logo .news button{
+    padding: 15px 30px;
+    width: 20%;
+    cursor: pointer;
+    background-color: #666;
+    border: none;
+    color: #ffffffff;
+    font-weight: bold;
+}
+
+.foot-logo p{
+    font-size: 12px;
+    color: #b2b2b2;
+}
+
+footer .footer_container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+    background-color: #F3F4F7;
+}
+
+.footer_container .footer-row{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-row .foot-col img{
+    width: 70px;
+}
+
+.footer-row .foot-col p{
+    width: 150px;
+}
+
+.footer-row .foot-col h3{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer .footer-social{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer .footer-social i{
+    margin-right: 15px;
+    padding: 10px 10px;
+    background-color: black;
+    border-radius: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+footer .footer-social i:hover{
+    margin-right: 5px;
+    background-color: #666;
+}
+
+.footer-down {
+    text-align: center; 
+    padding-top: 20px;                
+}
+
+.footer-down ul{
+    display: flex;
+}
+
+.footer-down ul li{
+    margin: auto;
+}
+
+.footer-down ul li a{
+    color: #1f1f1f;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-down ul li a:hover{
+    color: #df30ef;
+}
+
+.footer-down p{
+    margin-top: 15px;
+}
+/* Fin footer☻ */
+
+/* connexion */
+.container .container-con{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+}
+
+.form-co{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto
+}
+/* Fin connexion */
+
+
+/* Articles */
+.articles-alls .article{
+    margin: 40px 0;
+}
+/* Fin Articles */
